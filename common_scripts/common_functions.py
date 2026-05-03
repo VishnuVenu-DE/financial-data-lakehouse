@@ -1,4 +1,4 @@
-def setup_adls_access():
+def setup_adls_access(spark, dbutils):
     client_id = dbutils.secrets.get(scope="financial-scope", key="adls-client-id2")
     tenant_id = dbutils.secrets.get(scope="financial-scope", key="adls-tenant-id")
     client_secret = dbutils.secrets.get(scope="financial-scope", key="adls-client-secret")
